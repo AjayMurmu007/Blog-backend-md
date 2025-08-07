@@ -1,3 +1,4 @@
+<<<<<<< HEAD
         {
           "version": 2,
           "builds": [
@@ -14,3 +15,20 @@
           ]
         }
 
+=======
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "index.js"
+      }
+    ]
+  }
+>>>>>>> 0a8cd41 (update frontend url)
