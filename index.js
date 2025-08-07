@@ -38,7 +38,7 @@ async function main() {
     await mongoose.connect(process.env.MONGODB_URL);
 
     app.get('/', (req, res) => {
-        res.send('Hotel Blogs Server is Running ..!')
+        res.send('Blogs Server is Running ..!')
 
     })
 
@@ -48,6 +48,6 @@ main().then(() => console.log("MongoDB Connected Successfully..!")).catch(err =>
 
 
 
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
-})
+// app.listen(port, () => {
+//     console.log(`Example app listening on port ${port}`)
+// })
